@@ -18,12 +18,3 @@ class Person {
     // Método
     fun printInfo() = "Nome: $name | CPF: $cpf"
 }
-
-fun main() {
-    val william = Person()
-
-    println(william.name)
-    println(william.cpf)
-    // println(william.Address().street)
-    println(william.printInfo())
-}

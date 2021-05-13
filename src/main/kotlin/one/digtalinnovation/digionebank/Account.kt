@@ -4,7 +4,7 @@ import java.math.BigDecimal
 
 class Account(
     val agency: Short,
-    val number: Long,
+    val number: Int,
     var balance: BigDecimal
 ) {
     fun deposit(value: BigDecimal) {
