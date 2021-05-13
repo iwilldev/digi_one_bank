@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>digionebank</artifactId>
-    <groupId>one.digitalinnovation.bank</groupId>
+    <groupId>one.digitalinnovation.digionebank</groupId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
