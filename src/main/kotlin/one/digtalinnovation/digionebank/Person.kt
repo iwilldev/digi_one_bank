@@ -1,20 +1,10 @@
 package one.digtalinnovation.digionebank
 
-class Person {
-    var name: String = "William" // Propriedade
-
-    var cpf: String = "123.456.789-00"
-
-    private set // Modificador de acesso
-/*
-    // Classe interna
-    inner class Address {
-        var street: String = "Rua Orquídeas"
+open class Person(
+    var name: String,
+    var cpf: String,
+) {
+    open fun printInfo() {
+        println("Nome: $name\nCPF: $cpf\n")
     }
-*/
-    // Construtor
-    constructor()
-
-    // Método
-    fun printInfo() = "Nome: $name | CPF: $cpf"
 }

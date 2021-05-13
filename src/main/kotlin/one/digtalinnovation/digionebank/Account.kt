@@ -1,17 +1,22 @@
 package one.digtalinnovation.digionebank
 
-import java.math.BigDecimal
-
 class Account(
-    val agency: Short,
+    val bank: Bank,
+    val agency: Int,
     val number: Int,
-    var balance: BigDecimal
+    var balance: Double
 ) {
-    fun deposit(value: BigDecimal) {
-
+    fun deposit(value: Double) {
+        println("Saldo anterior: $balance")
+        println("Depósito: $value")
+        balance += value
+        println("Saldo após operação: $balance")
     }
 
-    fun withdraw(value: BigDecimal) {
-
+    fun withdraw(value: Double) {
+        println("Saldo anterior: $balance")
+        println("Saque: $value")
+        balance -= value
+        println("Saldo após operação: $balance")
     }
 }
