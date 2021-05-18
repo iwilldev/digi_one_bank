@@ -1,6 +1,6 @@
 package one.digtalinnovation.digionebank
 
-class Employee(
+abstract class Employee(
     name: String,
     cpf: String,
     val salary: Double
