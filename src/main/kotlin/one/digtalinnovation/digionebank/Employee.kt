@@ -1,5 +1,7 @@
 package one.digtalinnovation.digionebank
 
+import one.digtalinnovation.digionebank.tests.AuthenticationTest
+
 abstract class Employee(
     name: String,
     cpf: String,
@@ -11,8 +13,7 @@ abstract class Employee(
        Nome: $name
        CPF: $cpf
        Salário: $salary
-       Auxílio: ${calculateAssistance()}
-       
+       Auxílio: ${calculateAssistance()} 
         """.trimIndent())
     }
 }

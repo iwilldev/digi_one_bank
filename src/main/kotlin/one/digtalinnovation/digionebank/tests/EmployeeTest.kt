@@ -14,8 +14,11 @@ fun main() {
         name = "Mary Jane",
         cpf = "000.000.000-00",
         salary = 4200.00,
+        password = "senha123"
     )
 
     william.printInfo()
     mary.printInfo()
+
+    AuthenticationTest().authenticate(mary)
 }
