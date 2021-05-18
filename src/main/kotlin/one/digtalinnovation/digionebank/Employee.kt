@@ -5,7 +5,14 @@ class Employee(
     cpf: String,
     val salary: Double
 ) : Person(name, cpf) {
-    override fun printInfo() {
-        println("Nome: $name\nCPF: $cpf\nSalário: $salary\n")
+    protected abstract fun calculateAssistance(): Double
+    fun printInfo() {
+        println("""
+       Nome: $name
+       CPF: $cpf
+       Salário: $salary
+       Auxílio: ${calculateAssistance()}
+       
+        """.trimIndent())
     }
 }

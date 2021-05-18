@@ -5,7 +5,7 @@ class Client (
     cpf: String,
     val account: Account,
 ) : Person(name, cpf) {
-    override fun printInfo() {
+    fun printInfo() {
         println(
             "Nome: $name\n" +
             "CPF: $cpf\n" +
