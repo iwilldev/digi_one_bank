@@ -15,5 +15,7 @@ fun main() {
             1500.00)
     )
 
+    william.printInfo()
+
     william.account.withdraw(120.00)
 }
