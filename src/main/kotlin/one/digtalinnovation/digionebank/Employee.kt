@@ -5,7 +5,7 @@ class Employee(
     cpf: String,
     val salary: Double
 ) : Person(name, cpf) {
-    override fun printInfo() {
+    fun printInfo() {
         println("Nome: $name\nCPF: $cpf\nSalário: $salary\n")
     }
 }
